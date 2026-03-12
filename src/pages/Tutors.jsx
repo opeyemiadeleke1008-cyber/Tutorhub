@@ -189,7 +189,7 @@ export default function Tutors() {
 
                 <p className="mt-2 inline-flex items-center gap-1 text-sm text-slate-600">
                   <Star size={14} className="fill-amber-300 text-amber-400" />
-                  {Number(tutor.rating || 0).toFixed(1)} • {tutor.mode}
+                  {Number(tutor.rating || 0).toFixed(1)} ï¿½ {tutor.mode}
                 </p>
 
                 <div className="mt-4 flex gap-2">
@@ -206,10 +206,10 @@ export default function Tutors() {
                       setRefreshKey((v) => v + 1);
                     }}
                     className={`rounded-full px-3 py-2 text-sm font-bold ${
-                      liked ? "bg-rose-100 text-rose-700" : "bg-slate-100 text-slate-700"
+                      liked ? "bg-rose-100 text-black" : "bg-slate-100 text-slate-700"
                     }`}
                   >
-                    <Heart size={16} className={liked ? "fill-rose-500" : ""} />
+                    <Heart size={16} className={liked ? "fill-black" : ""} />
                   </button>
                 </div>
               </article>
